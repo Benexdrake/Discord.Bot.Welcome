@@ -6,15 +6,15 @@ export class WelcomeEmbed
         const embed = new EmbedBuilder();
         try 
         {
+            const welcomeMessage = "**Hier erwartet dich ein Paradies für Gaming-Enthusiasten. Trete ein und finde Gleichgesinnte, lebhafte Diskussionen über Spiele, Turniere, Hilfestellungen und unvergessliche Gaming-Momente. Sei Teil unserer Gamer-Familie und lass uns gemeinsam die Welt der Videospiele erkunden!** 🎮🚀";
+
+
             embed.setAuthor({
                 iconURL: member.displayAvatarURL(),
                 name: member.user.tag + " hat den Server betreten"
             })
             .setColor('#FF7F00')
-            .setDescription('🔥 **Willkommen!**\n\nLange bist Du durch die verregneten Straßen der Großstadt gestapft. Eine Tür am Ende einer dunklen Gasse weckt Dein Interesse.'
-                +'Mit müden Augen, drückst Du auf den in der Form eines Phönix gehaltenen Klingelknopf. Die Tür schwingt auf, und ein, in gedämpftes, warmes Licht getauchter Raum liegt vor Dir. '
-                +'Sitz- und Sofagruppen gemütlich vor einem offenen Kamin arrangiert, dessen Flammen sanft das Birkenholz umspielen und es beruhigend knacken lassen. '
-                +'Wände gefüllt mit Bücherregalen und schweren Wandteppichen, auf einer Seite des Raumes in einer Bar abschließend.')
+            .setDescription(welcomeMessage)
             .setFields([
                 {
                     name: '‎',
